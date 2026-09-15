@@ -1,0 +1,12 @@
+# Design with AI — hub
+#
+# NOTE: crawlers only fetch robots.txt from the HOST ROOT.
+# On a project page like https://<user>.github.io/design-with-ai/robots.txt
+# this file is NOT read. It only takes effect once you use a custom domain
+# or a user/org site (https://<user>.github.io/robots.txt).
+#
+# The rule that actually works everywhere is the meta tag already in index.html:
+#   <meta name="robots" content="noindex, nofollow">
+
+User-agent: *
+Disallow: /
