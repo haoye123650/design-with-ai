@@ -194,20 +194,7 @@
   .tile.has-portrait .name { margin-top: 9px; font-size: 14px; }
   .tile.has-portrait .status { margin-top: 3px; font-size: 10px; }
 
-  /* Click a tile to enlarge */
-  .tile.has-portrait { cursor: zoom-in; }
-  .tile.has-portrait .art { position: relative; }
-  .tile.has-portrait .art::after {
-    content: "\2197";
-    position: absolute; right: 7px; bottom: 7px;
-    width: 22px; height: 22px; border-radius: 50%;
-    background: rgba(26,26,26,0.52); color: #fff;
-    font-size: 12px; line-height: 22px; text-align: center;
-    opacity: 0; transition: opacity 0.15s;
-  }
-  .tile.has-portrait:hover .art::after,
-  .tile.has-portrait:focus-visible .art::after { opacity: 1; }
-  .tile.has-portrait:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .tile:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 
   /* Lightbox */
   .lb {
@@ -382,23 +369,23 @@
 <section class="section" id="students">
   <div class="section-title">Student Gallery</div>
   <h2>Meet the class.</h2>
-  <p>15 tiles, one universe each. Students appear by first initial and surname only. Tiles fill in as each student clears a milestone, and every tile opens up on Week 29. <strong>Click any portrait to see it full size.</strong></p>
+  <p>15 tiles, one universe each. Students appear by first initial and surname only. Tiles fill in as each student clears a milestone, and every tile opens up on Week 29. <strong>Click a tile to open that student's work page.</strong></p>
   <div class="grid">
-    <div class="tile has-portrait"><div class="art"><img src="portraits/c-mao.jpg" alt="Character portrait by C. Mao"></div><div class="name">C. Mao</div><div class="status">W2 portrait</div></div>
-    <div class="tile has-portrait"><div class="art"><img src="portraits/l-wu.jpg" alt="Character portrait by L. Wu"></div><div class="name">L. Wu</div><div class="status">W2 portrait</div></div>
-    <div class="tile"><div class="name">O. Ding</div><div class="status">coming soon</div></div>
-    <div class="tile has-portrait"><div class="art"><img src="portraits/m-chen.jpg" alt="Character portrait by M. Chen"></div><div class="name">M. Chen</div><div class="status">W2 portrait</div></div>
-    <div class="tile has-portrait"><div class="art"><img src="portraits/y-ma.jpg" alt="Character portrait by Y. Ma"></div><div class="name">Y. Ma</div><div class="status">W2 portrait</div></div>
-    <div class="tile has-portrait"><div class="art"><img src="portraits/j-tang.jpg" alt="Character portrait by J. Tang"></div><div class="name">J. Tang</div><div class="status">W2 portrait</div></div>
-    <div class="tile"><div class="name">A. Li</div><div class="status">coming soon</div></div>
-    <div class="tile has-portrait"><div class="art"><img src="portraits/i-yan.jpg" alt="Character portrait by I. Yan"></div><div class="name">I. Yan</div><div class="status">W2 portrait</div></div>
-    <div class="tile"><div class="name">B. Zhang</div><div class="status">coming soon</div></div>
-    <div class="tile has-portrait"><div class="art"><img src="portraits/r-rao.jpg" alt="Character portrait by R. Rao"></div><div class="name">R. Rao</div><div class="status">W2 portrait</div></div>
-    <div class="tile has-portrait"><div class="art"><img src="portraits/j-wang.jpg" alt="Character portrait by J. Wang"></div><div class="name">J. Wang</div><div class="status">W2 portrait</div></div>
-    <div class="tile has-portrait"><div class="art"><img src="portraits/j-e.jpg" alt="Character portrait by J. E."></div><div class="name">J. E.</div><div class="status">W2 portrait</div></div>
-    <div class="tile"><div class="name">T. Liu</div><div class="status">coming soon</div></div>
-    <div class="tile"><div class="name">E. Zhang</div><div class="status">coming soon</div></div>
-    <div class="tile has-portrait"><div class="art"><img src="portraits/v-zhang.jpg" alt="Character portrait by V. Zhang"></div><div class="name">V. Zhang</div><div class="status">W2 portrait</div></div>
+    <a class="tile has-portrait" href="students/c-mao/"><div class="art"><img src="portraits/c-mao.jpg" alt="Character portrait by C. Mao"></div><div class="name">C. Mao</div><div class="status">W2 portrait</div></a>
+    <a class="tile has-portrait" href="students/l-wu/"><div class="art"><img src="portraits/l-wu.jpg" alt="Character portrait by L. Wu"></div><div class="name">L. Wu</div><div class="status">W2 portrait</div></a>
+    <a class="tile" href="students/o-ding/"><div class="name">O. Ding</div><div class="status">coming soon</div></a>
+    <a class="tile has-portrait" href="students/m-chen/"><div class="art"><img src="portraits/m-chen.jpg" alt="Character portrait by M. Chen"></div><div class="name">M. Chen</div><div class="status">W2 portrait</div></a>
+    <a class="tile has-portrait" href="students/y-ma/"><div class="art"><img src="portraits/y-ma.jpg" alt="Character portrait by Y. Ma"></div><div class="name">Y. Ma</div><div class="status">W2 portrait</div></a>
+    <a class="tile has-portrait" href="students/j-tang/"><div class="art"><img src="portraits/j-tang.jpg" alt="Character portrait by J. Tang"></div><div class="name">J. Tang</div><div class="status">W2 portrait</div></a>
+    <a class="tile" href="students/a-li/"><div class="name">A. Li</div><div class="status">coming soon</div></a>
+    <a class="tile has-portrait" href="students/i-yan/"><div class="art"><img src="portraits/i-yan.jpg" alt="Character portrait by I. Yan"></div><div class="name">I. Yan</div><div class="status">W2 portrait</div></a>
+    <a class="tile" href="students/b-zhang/"><div class="name">B. Zhang</div><div class="status">coming soon</div></a>
+    <a class="tile has-portrait" href="students/r-rao/"><div class="art"><img src="portraits/r-rao.jpg" alt="Character portrait by R. Rao"></div><div class="name">R. Rao</div><div class="status">W2 portrait</div></a>
+    <a class="tile has-portrait" href="students/j-wang/"><div class="art"><img src="portraits/j-wang.jpg" alt="Character portrait by J. Wang"></div><div class="name">J. Wang</div><div class="status">W2 portrait</div></a>
+    <a class="tile has-portrait" href="students/j-e/"><div class="art"><img src="portraits/j-e.jpg" alt="Character portrait by J. E."></div><div class="name">J. E.</div><div class="status">W2 portrait</div></a>
+    <a class="tile" href="students/t-liu/"><div class="name">T. Liu</div><div class="status">coming soon</div></a>
+    <a class="tile" href="students/e-zhang/"><div class="name">E. Zhang</div><div class="status">coming soon</div></a>
+    <a class="tile has-portrait" href="students/v-zhang/"><div class="art"><img src="portraits/v-zhang.jpg" alt="Character portrait by V. Zhang"></div><div class="name">V. Zhang</div><div class="status">W2 portrait</div></a>
   </div>
 </section>
 
@@ -464,66 +451,6 @@
     <figcaption id="lb-cap"></figcaption>
   </figure>
 </div>
-
-<script>
-(function () {
-  var tiles = Array.prototype.slice.call(document.querySelectorAll('.tile.has-portrait'));
-  var lb = document.getElementById('lb');
-  if (!tiles.length || !lb) return;
-
-  var img = document.getElementById('lb-img');
-  var cap = document.getElementById('lb-cap');
-  var idx = 0;
-
-  function labelOf(tile) {
-    var n = tile.querySelector('.name');
-    return n ? n.textContent.trim() : '';
-  }
-
-  function show(i) {
-    idx = (i + tiles.length) % tiles.length;
-    var tile = tiles[idx];
-    var src = tile.querySelector('img');
-    if (!src) return;
-    img.src = src.getAttribute('src');
-    img.alt = src.getAttribute('alt') || '';
-    cap.textContent = labelOf(tile) + ' \u00b7 ' + (idx + 1) + ' / ' + tiles.length;
-    lb.classList.add('open');
-    document.body.style.overflow = 'hidden';
-  }
-
-  function close() {
-    lb.classList.remove('open');
-    document.body.style.overflow = '';
-  }
-
-  tiles.forEach(function (tile, i) {
-    tile.setAttribute('tabindex', '0');
-    tile.setAttribute('role', 'button');
-    tile.setAttribute('aria-label', 'Enlarge portrait of ' + labelOf(tile));
-    tile.addEventListener('click', function () { show(i); });
-    tile.addEventListener('keydown', function (e) {
-      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); show(i); }
-    });
-  });
-
-  lb.addEventListener('click', function (e) { if (e.target === lb) close(); });
-  lb.querySelector('.lb-close').addEventListener('click', close);
-  lb.querySelector('.lb-prev').addEventListener('click', function (e) {
-    e.stopPropagation(); show(idx - 1);
-  });
-  lb.querySelector('.lb-next').addEventListener('click', function (e) {
-    e.stopPropagation(); show(idx + 1);
-  });
-
-  document.addEventListener('keydown', function (e) {
-    if (!lb.classList.contains('open')) return;
-    if (e.key === 'Escape') close();
-    else if (e.key === 'ArrowRight') show(idx + 1);
-    else if (e.key === 'ArrowLeft') show(idx - 1);
-  });
-})();
-</script>
 
 </body>
 </html>
