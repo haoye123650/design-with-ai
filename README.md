@@ -59,6 +59,7 @@ https://你的用户名.github.io/design-with-ai/
 **加图片时**：把图片一起传到仓库（比如建个 `img/` 文件夹），然后 tile 里写
 `<img src="img/xxx.jpg" style="width:100%;border-radius:8px">`。
 **别用本机绝对路径**，线上找不到。
+学生作品放进 `students/<slug>/`（例如 `work-1.jpg`），在该页对应格子里启用预留的 `<img>` 或 `<video>`。
 
 ---
 
