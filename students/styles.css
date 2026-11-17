@@ -96,7 +96,7 @@ h1 {
   max-width: 880px;
 }
 
-.work { margin: 0; }
+.work { margin: 0; min-width: 0; }
 
 .frame {
   position: relative;
@@ -108,6 +108,8 @@ h1 {
   border: 1px solid var(--line);
   border-radius: 12px;
   overflow: hidden;
+  min-width: 0;
+  max-width: 100%;
 }
 
 .portrait img,
@@ -117,7 +119,10 @@ h1 {
   inset: 0;
   width: 100%;
   height: 100%;
+  max-width: 100%;
+  max-height: 100%;
   object-fit: contain;
+  object-position: center;
   display: block;
 }
 
